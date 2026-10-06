@@ -1,0 +1,150 @@
+{
+  "version": 83,
+  "latestApkVersion": "12.5",
+  "announcements": {
+    "push": {
+      "id": "pas9yh8gyect",
+      "enabled": false,
+      "title": "Professor VPN",
+      "text": "",
+      "targetNew": true,
+      "targetOld": false
+    },
+    "inApp": {
+      "id": "idrjip7nm06r",
+      "enabled": false,
+      "title": "اعلان Professor Vpn",
+      "text": "",
+      "color": "#8A3FFC",
+      "dismissible": true,
+      "targetNew": true,
+      "targetOld": false
+    }
+  },
+  "appLogo": {
+    "url": ""
+  },
+  "inAppTelegramUrl": "https://t.me/Professor_ch",
+  "contact": {
+    "text": "جهت ثبت تبلیغات و استعلام قیمت بنر به آیدی زیر در تلگرام پیام دهید:",
+    "telegramId": "@mx_pr",
+    "telegramUrl": "https://t.me/mx_pr"
+  },
+  "appBanner": {
+    "enabled": true,
+    "title": "",
+    "subtitle": "",
+    "bgColor": "#11161C",
+    "textColor": "#000000",
+    "imageUrl": "https://raw.githubusercontent.com/aptixzero/my_prFF_vP_N/main/adminpanel/media/banner_1787482997711.png?v=1787482999843",
+    "action": "url",
+    "actionUrl": "https://t.me/Professor_ch"
+  },
+  "homeCta": {
+    "enabled": true,
+    "labelFa": "عضو کانال تلگرام شوید",
+    "labelEn": "Join our Telegram channel",
+    "url": "https://t.me/Professor_ch"
+  },
+  "homeBanner": {
+    "enabled": true,
+    "imageUrl": "https://raw.githubusercontent.com/aptixzero/my_prFF_vP_N/main/adminpanel/media/banner_1787482997711.png?v=1787482999843",
+    "text": "",
+    "textColor": "#000000",
+    "url": "https://t.me/Professor_ch"
+  },
+  "donate": {
+    "enabled": true,
+    "heading": "از پروژه حمایت کنید",
+    "note": "حمایت شما سرورها را پایدار و پرسرعت نگه می‌دارد",
+    "items": [
+      {
+        "id": "usdt",
+        "coin": "USDT (TRC20)",
+        "address": "TQqMKjwi3sxE53kbsvDvoC98KCTn1MVX7X",
+        "logoUrl": "",
+        "network": "usdt"
+      },
+      {
+        "id": "trx",
+        "coin": "TRON (TRC20)",
+        "address": "TQqMKjwi3sxE53kbsvDvoC98KCTn1MVX7X",
+        "logoUrl": "",
+        "network": "trx"
+      },
+      {
+        "id": "ton",
+        "coin": "TON",
+        "address": "UQCT9g2PrxcqOGtuZHaN1czoujTH0OWRp6zpjyo2HfqnZ_JF",
+        "logoUrl": "",
+        "network": "ton"
+      }
+    ]
+  },
+  "downloadLinks": {
+    "enabled": true,
+    "heading": "لینک‌های دانلود",
+    "note": "برای دریافت آخرین نسخه Professor VPN از لینک‌های زیر استفاده کنید.",
+    "items": [
+      {
+        "id": "dl_0",
+        "title": "صفحه دانلود برنامه",
+        "url": "https://professorvpn.vercel.app/",
+        "note": ""
+      }
+    ]
+  },
+  "notice": {
+    "enabled": false,
+    "title": "اعلان Professor Vpn",
+    "text": "",
+    "id": "",
+    "color": "#8A3FFC"
+  },
+  "qrLink": {
+    "enabled": true,
+    "url": "https://professorvpn.vercel.app/",
+    "caption": "این بارکد را با دوربین گوشی اسکن کنید"
+  },
+  "ts": 1791291143503,
+  "lastUpdatedAt": 1791291143503,
+  "inAppTelegram": {
+    "url": "https://t.me/Professor_ch"
+  },
+  "ad": {
+    "enabled": true,
+    "title": "",
+    "subtitle": "",
+    "bgColor": "#11161C",
+    "textColor": "#000000",
+    "imageUrl": "https://raw.githubusercontent.com/aptixzero/my_prFF_vP_N/main/adminpanel/media/banner_1787482997711.png?v=1787482999843",
+    "action": "url",
+    "actionUrl": "https://t.me/Professor_ch"
+  },
+  "downloads": {
+    "enabled": true,
+    "heading": "لینک‌های دانلود",
+    "note": "برای دریافت آخرین نسخه Professor VPN از لینک‌های زیر استفاده کنید.",
+    "items": [
+      {
+        "id": "dl_0",
+        "title": "صفحه دانلود برنامه",
+        "url": "https://professorvpn.vercel.app/",
+        "note": ""
+      }
+    ]
+  },
+  "notification": {
+    "enabled": false,
+    "title": "اعلان Professor Vpn",
+    "text": "",
+    "id": "",
+    "color": "#8A3FFC"
+  },
+  "qrcode": {
+    "enabled": true,
+    "url": "https://professorvpn.vercel.app/",
+    "caption": "این بارکد را با دوربین گوشی اسکن کنید"
+  },
+  "registryUrl": "https://prf-vpn-panel.vercel.app"
+}

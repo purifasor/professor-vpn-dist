@@ -1,0 +1,719 @@
+{
+  "version": 69,
+  "updated_at": "2026-10-06T12:52:23Z",
+  "app": {
+    "name": "Professor VPN",
+    "latest_version": "12.5",
+    "latest_version_code": 106,
+    "contact": {
+      "title": "پشتیبانی",
+      "text": "جهت ثبت تبلیغات و استعلام قیمت بنر به آیدی زیر در تلگرام پیام دهید:",
+      "telegram": "https://t.me/mx_pr",
+      "telegram_id": "@mx_pr"
+    }
+  },
+  "downloads": [
+    {
+      "id": "dl_1231",
+      "version": "12.5",
+      "url": "https://github.com/purifasor/professor-vpn-dist/releases/download/v12.5/ProfessorVPN-v12.5-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v12.5-universal.apk",
+      "size": "58 MB",
+      "sha256": "64130a02b0f2ef7182468b30fc576033c73170576a2952a9753dce7c5c754be1",
+      "notes": "v12.5 — the auto-tuned engine: network settings measured and set automatically per link, real pings only (proxied request through the core), live pin/sink split during the sweep, 120-row batches that rotate until you stop, STOP always reachable in-app and in the notification.",
+      "changelog": [
+        "Network settings are automatic: every launch scans the link (Wi-Fi / carrier / quality / interference) and tunes the tunnel.",
+        "Real pings only: every verdict is a genuine proxied request through the Xray core to a live endpoint.",
+        "The sweep walks row 1 → N, pins green rows on top instantly, sinks dead rows with an English reason.",
+        "120-config batches rotate (121–240, 241–360, …) until YOU press STOP — the sweep never stops itself.",
+        "STOP is always available: the app button and the notification action share the same switch.",
+        "Adaptive pacing: the wait between probes follows the measured answer time — no fixed sleeps."
+      ]
+    },
+    {
+      "id": "dl_1230",
+      "version": "12.3",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v12.3/ProfessorVPN-v12.3-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v12.3-universal.apk",
+      "size": "58 MB",
+      "sha256": "f5170f18a4507857866ddf497a6f7e9447dfa157a425dea9132e54fee48e24c1",
+      "notes": "v12.3 — the sweep never stops on its own; every config gets its ping",
+      "date": "2026-10-05T16:22:33Z",
+      "changelog": [
+        "The ping sweep no longer ends itself — it keeps re-pinging until you press STOP",
+        "Coverage first: while any row has no result, only rows without one are probed",
+        "Workers are sized to the probe pool, so no config is left with no number",
+        "The sweep walks the list in the order you see it (no more starting at row 8)",
+        "First-answer probes get the native core's full 8 s window",
+        "A lost connection pauses the sweep instead of switching the search off",
+        "Abandoned native probes are reclaimed, so ping can never lock out until a restart"
+      ]
+    },
+    {
+      "id": "dl_1220",
+      "version": "12.2",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v12.2/ProfessorVPN-v12.2-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v12.2-universal.apk",
+      "size": "58 MB",
+      "sha256": "5d31db9ee90653d4bfe45126332a5469faddff61460e2e522d87078c5df99294",
+      "notes": "v12.2 — the sweep never stops on its own; every config gets its ping",
+      "date": "2026-10-05T15:49:04Z",
+      "changelog": [
+        "The ping sweep no longer ends itself — it keeps re-pinging until you press STOP",
+        "Workers are sized to the probe pool, so no config is left with no number",
+        "The sweep walks the list in the order you see it (no more starting at row 8)",
+        "First-answer probes get the native core's full 8 s window",
+        "A lost connection pauses the sweep instead of switching the search off",
+        "Abandoned native probes are reclaimed, so ping can never lock out until a restart"
+      ]
+    },
+    {
+      "id": "dl_1210",
+      "version": "12.1",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v12.1/ProfessorVPN-v12.1-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v12.1-universal.apk",
+      "size": "58 MB",
+      "sha256": "fd79a967077c4eb528096781acddd5b74abbbb2aaabf94efcf648b553c3e214d",
+      "notes": "v12.1 — one stable bounded ping sweep with durable My Config deletion",
+      "date": "2026-10-05T03:51:42Z",
+      "changelog": [
+        "START SEARCH tests one fixed Free Config list and never replaces it during ping",
+        "Ping uses bounded real probes without sleep, cooldown, or admission-time cutoff",
+        "Progress keeps one fixed total and never resets to 0/0 during a sweep",
+        "My Configs uses moderate concurrency and stays in place until ping completes",
+        "Deleted My Config rows stay deleted after restart and automatic promotion"
+      ]
+    },
+    {
+      "id": "dl_1200",
+      "version": "12",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v12/ProfessorVPN-v12-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v12-universal.apk",
+      "size": "58 MB",
+      "sha256": "72210287139089324379119f0f69493248909dda6d358b9423d23ab116c3af10",
+      "notes": "v12 — stable ping progress, fresh search generations, deterministic order",
+      "date": "2026-10-04T20:27:38Z",
+      "changelog": [
+        "Ping progress advances as soon as workers start",
+        "Native probes are bounded so repeated timeouts cannot accumulate without limit",
+        "START SEARCH replaces the previous Free list instead of appending to it",
+        "Rows keep a stable order during a sweep and after reopening the screen",
+        "Free-list cleanup preserves My Configs measurements"
+      ]
+    },
+    {
+      "id": "dl_1190",
+      "version": "11.9",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.9/ProfessorVPN-v11.9-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.9-universal.apk",
+      "size": "58 MB",
+      "sha256": "24abc6bf99e65ef3b8c681864842295f0ff631d76f0d5ea750ce44f1b90c0858",
+      "notes": "v11.9 — the sweep cannot freeze: pool, verdicts, progress, rotation",
+      "date": "2026-10-04T16:00:00Z",
+      "changelog": [
+        "A hung core call leaks one thread, never a pool slot",
+        "Inconclusive rows are tracked and retried, not swallowed",
+        "A definitive miss settles at once; the fast wall is ~13 s",
+        "The bar shows rows in flight; cycle end never clears a live probe",
+        "First probe target is the official Cloudflare latency endpoint"
+      ]
+    },
+    {
+      "id": "dl_1180",
+      "version": "11.8",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.8/ProfessorVPN-v11.8-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.8-universal.apk",
+      "size": "58 MB",
+      "sha256": "73301e901539880fd03bfa4081231c5126576f12afcc5d6cbd6f76fe207c8d39",
+      "notes": "v11.8 — the ladder decides, every target gets its slice",
+      "date": "2026-10-04T13:35:00Z",
+      "changelog": [
+        "Every row runs the tested ladder first, then a fresh UrlTest count",
+        "All three probe targets are tried inside a 6 second budget",
+        "A no-verdict row stays untested instead of red",
+        "Still 120 at a time, walk until STOP"
+      ]
+    },
+    {
+      "id": "dl_1170",
+      "version": "11.7",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.7/ProfessorVPN-v11.7-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.7-universal.apk",
+      "size": "58 MB",
+      "sha256": "9212ca101860c475b063169e6d1e237475487018507c48df34932dc112fcd717",
+      "notes": "v11.7 — the walk continues: next list, STOP, Cloudflare and Microsoft",
+      "date": "2026-10-04T12:25:00Z",
+      "changelog": [
+        "A walked list is replaced by the next 120; working rows stay",
+        "STOP stays visible; PING ALL and DELETE ALL stay off while pinging",
+        "Probe targets are Cloudflare and Microsoft, with failover"
+      ]
+    },
+    {
+      "id": "dl_1160",
+      "version": "11.6",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.6/ProfessorVPN-v11.6-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.6-universal.apk",
+      "size": "58 MB",
+      "sha256": "a38e9448ff536b65cf295508e4069b29660485dcd5695a5722cc00be2f3a6228",
+      "notes": "v11.6 — fast public probes, then a 3-attempt check of the ones that answer",
+      "date": "2026-10-04T11:20:00Z",
+      "changelog": [
+        "Public connectivity targets, not one private address",
+        "A blocked target does not mark a live config dead",
+        "One 4 second probe per row; only the best 20 get 3 attempts",
+        "Still 120 configs at a time"
+      ]
+    },
+    {
+      "id": "dl_1150",
+      "version": "11.5",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.5/ProfessorVPN-v11.5-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.5-universal.apk",
+      "size": "58 MB",
+      "sha256": "6fd21b3e546e900e9168280f8c20f8c087f54b5d8d335ac623b3d526e6233029",
+      "notes": "v11.5 — URLTest: three proxy requests, median, stability",
+      "date": "2026-10-03T21:15:00Z",
+      "changelog": [
+        "Ping is an HTTPS request through the proxy, not a ping of the server IP",
+        "Each config gets 3 fresh attempts; the number is the median",
+        "3/3 Available, 1/3 or 2/3 Unstable, 0/3 Unreachable",
+        "Still 120 configs at a time"
+      ]
+    },
+    {
+      "id": "dl_1140",
+      "version": "11.4",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.4/ProfessorVPN-v11.4-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.4-universal.apk",
+      "size": "58 MB",
+      "sha256": "51446c2ea806ad4c4112390b6138887f1b753d9311b941583da9a5c7183d1248",
+      "notes": "v11.4 — a real ping moves the row: green to the top, no ping to the bottom",
+      "date": "2026-10-03T20:50:00Z",
+      "changelog": [
+        "START SEARCH analyses the link, sets the match, then adds 120 configs",
+        "The counter counts finished pings only",
+        "A config that pings is pinned to the top",
+        "A config that does not ping goes to the bottom"
+      ]
+    },
+    {
+      "id": "dl_1130",
+      "version": "11.3",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.3/ProfessorVPN-v11.3-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.3-universal.apk",
+      "size": "58 MB",
+      "sha256": "28e903c1a50fc742118e43c620cff68caf75a806822f5727caac2d1df7cd0b27",
+      "notes": "v11.3 — ping starts with the list, a hung core cannot freeze the sweep",
+      "date": "2026-10-03T19:20:00Z",
+      "changelog": [
+        "Configs download first; network analysis no longer blocks the list",
+        "The ping starts when the rows appear — the bar leaves 0 as soon as a row is picked up",
+        "A hung core call is abandoned after 5 seconds, so one stall cannot freeze the sweep",
+        "The probe host is pinned, so the first ping does not wait on device DNS"
+      ]
+    },
+    {
+      "id": "dl_1120",
+      "version": "11.2",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.2/ProfessorVPN-v11.2-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.2-universal.apk",
+      "size": "58 MB",
+      "sha256": "f72362e75e267fc7ddb95ab2bcb16c50bb93ff64f49804689f8825728e4a6092",
+      "notes": "v11.2 — a real core ping, not a raw TCP guess",
+      "date": "2026-10-03T18:50:00Z",
+      "changelog": [
+        "A raw TCP miss no longer paints a config red — the core always probes",
+        "One real core answer is a green ping; a second sample no longer vetoes it",
+        "Probe URLs use valid host certificates plus Apple and Firefox fallbacks",
+        "The progress bar counts the rows on screen, live"
+      ]
+    },
+    {
+      "id": "dl_1110",
+      "version": "11.1",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.1/ProfessorVPN-v11.1-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.1-universal.apk",
+      "size": "58 MB",
+      "sha256": "b83aa430b5438d6a59995e90369df8cf29004a25a2c3f6620834a08593da4e00",
+      "notes": "v11.1 — the ping finally holds: screen-off keep-alive, no gaps, best bank first",
+      "date": "2026-10-03T18:05:00Z",
+      "changelog": [
+        "Screen-off network heartbeat (45s) + 3-miss link-lost hint — the sweep survives the locked screen",
+        "First-answer fast acquire (3s not 30s) — queued rows carry in seconds instead of stalling",
+        "Bank walk ranked by YOUR link's measured health (SourceRanker) — best bank first, not file order",
+        "Lossy links probe narrower but longer — no more stall-together-clip-together gaps"
+      ]
+    },
+    {
+      "id": "dl_1100",
+      "version": "11.0",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v11.0/ProfessorVPN-v11.0-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v11.0-universal.apk",
+      "size": "58 MB",
+      "sha256": "7d1fd5e7c455418741667b6ceeaff02fd3e04468a4a97a8dd3b3a9dbe4eb9494",
+      "notes": "v11.0 — the strongest version: live numbers, full batches, real verdicts",
+      "date": "2026-10-03T15:21:00Z",
+      "changelog": [
+        "Connect screen reads the live tunnel flag — numbers show whenever the tunnel is up, no wipes racing the pump",
+        "Batches fill before they walk: parallel 4-bank walks per kind, corpus top-up, never below 50 rows",
+        "Heartbeat carries the tunnel flag — dashboard splits in-app live from VPN-connected live",
+        "Dashboard zero until v11 devices report; honest empty states everywhere"
+      ]
+    },
+    {
+      "id": "dl_1090",
+      "version": "10.9",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.9/ProfessorVPN-v10.9-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.9-universal.apk",
+      "size": "58 MB",
+      "sha256": "f54ee74c4a8ba0b699b2f14c872d89d646d56c4223aeec553a4d7c6ace7c5dd4",
+      "notes": "v10.9 — the sweep that never interferes with itself",
+      "date": "2026-10-03T13:45:00Z",
+      "changelog": [
+        "Rotation forgets dropped rows always (no 400-row floor); one sweep at a time with honest buttons",
+        "My Configs sinks dead rows to the bottom, pins lowest ping to the top — same rule as Free",
+        "Panel: registry-only dashboard (zero until devices report), Users phone columns, real Tracking list",
+        "Console 404 + JSON errors fixed; credentials rotated; device facts without identifiers"
+      ]
+    },
+    {
+      "id": "dl_1080",
+      "version": "10.8",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.8/ProfessorVPN-v10.8-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.8-universal.apk",
+      "size": "58 MB",
+      "sha256": "137e3729b143af99af4fef9cbb677d6b38e1dccf9e6eaf7afe6d1f16966b0d39",
+      "notes": "v10.8 — stable on second use: re-sync, forget, and stay fast",
+      "date": "2026-10-03T12:40:00Z",
+      "changelog": [
+        "Every ping re-syncs the network analysis first — a changed or stale link re-measures before it measures",
+        "A rotated list forgets what it dropped: statuses and persisted verdicts go with the dropped rows",
+        "Boot analyses the link while the splash is up; the revive re-measures before it rebuilds",
+        "Per-device registry: dashboard counts installs and live devices, not counter hits",
+        "Users + Tracking pages in the panel (counters only — no IPs, MACs, locations, sites, or apps)",
+        "Backup disabled, cleartext disabled, obfuscation on"
+      ]
+    },
+    {
+      "id": "dl_1070",
+      "version": "10.7",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.7/ProfessorVPN-v10.7-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.7-universal.apk",
+      "size": "58 MB",
+      "sha256": "229280629e572cfe3629f83ae9bbb08647ce0af74806f8b0e6aac1511821639d",
+      "notes": "v10.7 — fail fast on dead rows, stay generous with live ones",
+      "date": "2026-10-02T21:00:00Z",
+      "changelog": [
+        "A dead row ends on its first definitive verdict — no second replay of the same failure",
+        "Live-shaped misses keep their retry; the TCP gate answers in ~1.2 s instead of ~4 s",
+        "The confirmation trusts the answer it just got instead of paying a third ladder",
+        "The sweep walks Server 1 to N in list order; no number and no config repeats",
+        "A walked batch rotates to the next one; verdict cache kills duplicate dials",
+        "START SEARCH still measures first (Wi-Fi vs SIM, DNS, ports, DPI); manual picks win",
+        "An interrupted probe says 'not checked yet — tap PING to retry', never red"
+      ]
+    },
+    {
+      "id": "dl_1060",
+      "version": "10.6",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.6/ProfessorVPN-v10.6-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.6-universal.apk",
+      "size": "58 MB",
+      "sha256": "471464c9080a1298e982d690c222b3aa8bc3391e7078bcad49d6a2988e727706",
+      "notes": "v10.6 — testing that tells the truth, tests every config, and finishes",
+      "date": "2026-10-02T12:15:42Z",
+      "changelog": [
+        "No config is skipped without a verdict: endpoint reuse mirrors the measured verdict (or probes the row itself)",
+        "Endpoint copies inherit their twin's verdict instead of sitting untested for ever",
+        "Pinging… appears only for rows actually being probed",
+        "The per-row wall covers the probe-pool queue; a row with no verdict is retried three times",
+        "Every failure shows its reason (no TCP answer, invalid config, handshake reset, too slow, …)",
+        "The tested config IS the imported config: fields Room cannot store are rebuilt from the raw link",
+        "Tapping a config can no longer connect to a different one",
+        "Link-aware test tuning per search (Wi-Fi vs cellular, weak, RTT, loss); an explicit pin always wins",
+        "Wi-Fi is finally classified as Wi-Fi; a dead row is dialled once instead of twice"
+      ]
+    },
+    {
+      "id": "dl_1050",
+      "version": "10.5",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.5/ProfessorVPN-v10.5-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.5-universal.apk",
+      "size": "58 MB",
+      "sha256": "56061d530edf8cd3f3748708ebe526056f08b75d98c1612a4201d441da83b03e",
+      "notes": "v10.5 — real pings on every row, and a list that keeps moving",
+      "date": "2026-10-01T23:40:00Z",
+      "changelog": [
+        "The list advances again: a finished batch is replaced by the next one (Server 1…120 → 121…240, counting up)",
+        "Nothing is marked unreachable without a real probe: the port prefilter and the socket wave no longer decide verdicts",
+        "The deep-probe cap no longer collapses on a dead-heavy batch (only real pool pressure feeds it)",
+        "The 100 KB confirmation is measured from the core's own duration — live nodes on slow links are no longer rejected",
+        "A starved probe goes back to untested instead of painting the row unreachable",
+        "The ping ladder leads with the DNS-free Cloudflare trace; AUTO never picks a Google endpoint",
+        "Bank walk: error-page fetches retried, 30-day reset re-opens every bank, drawn batches are remembered as seen",
+        "One universal APK, same signing key as v10.4",
+        "Deleting a config from the list now sticks (the delete write used to re-add it)",
+        "A slow, partial batch is merged instead of replacing the list"
+      ]
+    },
+    {
+      "id": "dl_1040",
+      "version": "10.4",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.4/ProfessorVPN-v10.4-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.4-universal.apk",
+      "size": "58 MB",
+      "sha256": "bfdcd9c8d35eda3888eff3feb2c7af260a428cb3d60705b2b52ef5856f329609",
+      "notes": "v10.4 — new config banks, a real ping service, and a sweep that walks in order",
+      "date": "2026-10-01T20:57:28Z",
+      "changelog": [
+        "100 new config banks (50 VLESS + 50 VMESS) replace the old source list",
+        "120 configs per batch, from the same bank until it runs out, never repeated",
+        "Each search picks the bank by measuring your own connection",
+        "Ping service is now a setting: 8 endpoints, each with a live CHECK",
+        "CDN mirror chosen automatically (raw is filtered on many links)",
+        "The ping bar starts at 0% and the sweep starts from the first config",
+        "One universal APK, same signing key as v10.3"
+      ]
+    },
+    {
+      "id": "dl_1030",
+      "version": "10.3",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.3/ProfessorVPN-v10.3-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.3-universal.apk",
+      "size": "58 MB",
+      "sha256": "93da577e0134f83be42a39a5fed1d261e952b898363d69ed66974c64f7564868",
+      "notes": "v10.3 — every config shows its verdict, live; pings work again",
+      "date": "2026-10-01T18:13:37Z",
+      "changelog": [
+        "The v10.2 regression that made every ping fail is fixed (no mux in the measurement)",
+        "Every row shows a live verdict: green pinned on top, red at the bottom",
+        "The counter counts the whole batch (no more 0/11 against 36 rows)",
+        "A batch is 120 configs: 60 VLESS + 60 VMESS",
+        "No more rows stuck on 'Pinging…'; unfinished rows are re-probed",
+        "A green config is pinned in the Free list and added to My Configs",
+        "One universal APK, same signing key as v10.2"
+      ]
+    },
+    {
+      "id": "dl_1020",
+      "version": "10.2",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.2/ProfessorVPN-v10.2-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.2-universal.apk",
+      "size": "58 MB",
+      "sha256": "8aeac7405480522231a562dd89945f3ed3db2596617f58c63a14ce4a50084171",
+      "notes": "v10.2 — real search: consecutive numbers, honest verdicts, sources that learn",
+      "date": "2026-10-01T16:23:06Z",
+      "changelog": [
+        "Server numbers are consecutive again (no more jumps like 36 → 3456)",
+        "A config is never marked dead by a starved or cancelled probe",
+        "An unfinished cycle keeps its rows and pings them next",
+        "The app learns which source actually works on your network",
+        "Source rotation works again; 18 duplicate feeds removed",
+        "The per-network strategy really tunes mux, fragmentation and timeouts",
+        "A picked mode keeps its own promise (GAMING stays without mux)",
+        "One universal APK, same signing key as v10.1"
+      ]
+    },
+    {
+      "id": "dl_1010",
+      "version": "10.1",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10.1/ProfessorVPN-v10.1-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10.1-universal.apk",
+      "size": "58 MB",
+      "sha256": "eabdc46e7110eb3dab03f24d9360f75da15f180fb245a570220289a5f63eb540",
+      "notes": "v10.1 — close means off, use the whole link, announce to the right version",
+      "date": "2026-10-01T14:26:38Z",
+      "changelog": [
+        "Closing the app switches the auto-search off; minimising keeps it running",
+        "No artificial speed limits — the tunnel uses the whole link",
+        "Faster search: dead configs are not probed twice",
+        "A green config really connects — it must also carry 100 KB",
+        "A dead server is replaced automatically in about 3 minutes",
+        "Announcements for the newest version or for older versions, set in the panel",
+        "One universal APK, same signing key as v10"
+      ]
+    },
+    {
+      "id": "dl_1000",
+      "version": "10",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v10/ProfessorVPN-v10-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v10-universal.apk",
+      "size": "58 MB",
+      "sha256": "764e60bbe942fd3fe98fe6307052a8da8314fb4dc0ad643eb8cbb56dc2325a7d",
+      "notes": "v10 — finish the 240-row batch, pin greens, tunnel IPv4+IPv6",
+      "date": "2026-09-08T14:10:00Z",
+      "changelog": [
+        "A 240-row list is walked before the next list is added",
+        "My Configs pins a green row the instant it pings",
+        "Connected now tunnels IPv4 and IPv6",
+        "AUTO uses MASTER so MPTCP cannot look connected while apps stay empty",
+        "One universal APK, same signing key as v9.9"
+      ]
+    },
+    {
+      "id": "dl_990",
+      "version": "9.9",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.9/ProfessorVPN-v9.9-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.9-universal.apk",
+      "size": "58 MB",
+      "sha256": "d0589f6987afeff309fa372d1ebf3c9b8d011ea299184371af416f15bf99c1c5",
+      "notes": "v9.9 — faster real pings; Free list no longer resets between batches",
+      "date": "2026-09-08T05:40:00Z",
+      "changelog": [
+        "List / Search ping is a real e2e answer without the 100 KB tax on every row",
+        "A later batch is merged; the on-screen snapshot cannot wipe it",
+        "Port prefilter no longer shrinks 240 configs down to 18",
+        "One universal APK, same signing key as v9.8"
+      ]
+    },
+    {
+      "id": "dl_980",
+      "version": "9.8",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.8/ProfessorVPN-v9.8-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.8-universal.apk",
+      "size": "58 MB",
+      "sha256": "1dfe738c58dd280c6a4c50621a07a7b8c60d480944be9dbd5295fa6571aac177",
+      "notes": "v9.8 — a green ping is a working tunnel; pings survive close; My Configs no longer jumps; caches stay bounded",
+      "date": "2026-09-07T21:50:00Z",
+      "changelog": [
+        "List ping and Auto Test use the STANDARD lane (real e2e plus 100 KB payload)",
+        "A later session miss no longer wipes a proven ping after close/reopen",
+        "My Configs stays still while pinging and sorts once at the end",
+        "Free PING ALL keeps its result if you leave the tab",
+        "Source and Free-list caches are capped so long sessions stay fast",
+        "One universal APK, same signing key as v9.7"
+      ]
+    },
+    {
+      "id": "dl_970",
+      "version": "9.7",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.7/ProfessorVPN-v9.7-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.7-universal.apk",
+      "size": "58 MB",
+      "sha256": "69cf971f8879e222daaf72da28bd60ea0ce11798b5a15aa6f609019c3441d6be",
+      "notes": "v9.7 — new configs are added and pinged; no duplicate pings; counter matches the real Server name",
+      "date": "2026-09-02T11:40:00Z",
+      "changelog": [
+        "Later search cycles no longer drop the configs they just collected",
+        "One ping per server identity and per address:port — no duplicate pings",
+        "Progress shows Checked n/N and the real Server remark, not a fake index",
+        "One fast retry so a real node is not left with no ping",
+        "One universal APK, same signing key as v9.6"
+      ]
+    },
+    {
+      "id": "dl_960",
+      "version": "9.6",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.6/ProfessorVPN-v9.6-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.6-universal.apk",
+      "size": "58 MB",
+      "sha256": "53827913e1e0916e5b250b8146cc89678f068f1d107bb0ce888bd4087d96dfd3",
+      "notes": "v9.6 — faster first working config: small first batch, FIRST_ANSWER discovery, no in-place 15s retry on dead rows",
+      "date": "2026-09-02T10:55:00Z",
+      "changelog": [
+        "Search hands ~36 configs to Auto Test instead of waiting for 240",
+        "Discovery ping is the fast e2e lane — dead rows are skipped, not retried for 15s",
+        "Fresh network profile (ports/DNS/DPI) is reused so Search does not re-measure every time",
+        "One universal APK, same signing key as v9.5"
+      ]
+    },
+    {
+      "id": "dl_950",
+      "version": "9.5",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.5/ProfessorVPN-v9.5-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.5-universal.apk",
+      "size": "58 MB",
+      "sha256": "63b432523644a5bede7b24ca29c6606a6113002a6a2796bb3a4d35c09b0b4dc4",
+      "notes": "v9.5 — connection-test page no longer freezes at 97%; search hands configs to the ping sweep",
+      "date": "2026-09-02T09:50:00Z",
+      "changelog": [
+        "Connection-test page no longer freezes at 97% after applying settings",
+        "Auto Test starts only after the first batch is collected, so configs get pinged, pinned, and saved to My Configs",
+        "A hung source fetch cannot trap the page — the sweep still starts",
+        "One universal APK, same signing key as v9.4"
+      ]
+    },
+    {
+      "id": "dl_940",
+      "version": "9.4",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.4/ProfessorVPN-v9.4-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.4-universal.apk",
+      "size": "58 MB",
+      "sha256": "513aa38bf7823b7c829496623673e6cc4927267e20d54d60818ed48986502cd5",
+      "notes": "v9.4 — pings survive minimize, a ping means it connects, disconnect is instant, Reset to default",
+      "date": "2026-09-02T06:20:00Z",
+      "changelog": [
+        "Pings survive minimize, tab switch and screen-off — sweeps no longer cancel in the background",
+        "A green ping is a real tunnel plus payload, so Connect on that config must work",
+        "Live ping stays still through jitter; connecting does not overwrite the list number",
+        "Disconnect drops the TUN immediately and no longer freezes on the Xray stop",
+        "Watchdog holds a working tunnel while bytes are still moving",
+        "Search keeps finding configs with the screen off; new batches merge so greens stay",
+        "Reset to default returns every network setting to automatic",
+        "One universal APK, same signing key as v9.3"
+      ]
+    },
+    {
+      "id": "dl_930",
+      "version": "9.3",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.3/ProfessorVPN-v9.3-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.3-universal.apk",
+      "size": "58 MB",
+      "sha256": "46347d31ebbb1c8d558cd42f4b3fc3334527f7944ae2a16a51f45a54108a322f",
+      "notes": "v9.3 — tunnel survives process kill, unique Server N names, live pin/sink, instant disconnect",
+      "date": "2026-08-31T06:30:00Z",
+      "changelog": [
+        "VPN stays up after Android kills the process — user connect intent is persisted and restored",
+        "Server names are unique identities (Server 1 is one config, never reused for another)",
+        "Working pings pin to the top instantly; failed pings sink to the bottom",
+        "PING ALL clears old numbers first, then measures fresh; restart shows the last real ping only",
+        "Disconnect closes the tunnel immediately so rapid connect/disconnect does not stick",
+        "One universal APK, same signing key as v9.2"
+      ]
+    },
+    {
+      "id": "dl_920",
+      "version": "9.2",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.2/ProfessorVPN-v9.2-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.2-universal.apk",
+      "size": "58 MB",
+      "sha256": "967156c45b20c7a8067b675109ad2c0c46e2e5c4aed3a0c87f081fa4cbcd918b",
+      "notes": "v9.2 — Free list merges instead of resetting, real pings show again, greens pin to the top",
+      "date": "2026-08-30T14:20:00Z",
+      "changelog": [
+        "Free list no longer resets: new batches merge in, duplicates (same server or same address:port) are skipped",
+        "Pings show again: list/Auto Test use the first-answer path so a working config gets a real millisecond",
+        "Configs that ping stay pinned at the top; configs that do not sink to the bottom",
+        "The tested X / total N counter resets per batch and never jumps backwards inside a batch",
+        "Notification no longer shows ping milliseconds",
+        "One universal APK, same signing key as v9.1"
+      ]
+    },
+    {
+      "id": "dl_910",
+      "version": "9.1",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.1/ProfessorVPN-v9.1-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.1-universal.apk",
+      "size": "58 MB",
+      "sha256": "345db07ad946d0b446fa3a36c6b94edebca5143785bde8664a74a9ca948f7c39",
+      "notes": "v9.1 — truthful ping: if a config shows a ping it connects; if it will not connect it shows no ping. Rock-solid tunnel.",
+      "date": "2026-08-30T13:40:00Z",
+      "changelog": [
+        "A ping is only shown when the config is connectable — no more unstable badge or fake numbers",
+        "PING ALL starts at row 1, clears old results first, and measures every row fresh",
+        "Ping results survive app restart (Room is the store of record)",
+        "Tapping a Free config selects it for Home without leaving the tab",
+        "My Configs numbering is 1, 2, 3 on screen; COPY never carries a feed name",
+        "STOP goes through one controller; SOCKS/API ports are forced free before every start",
+        "Light / Dark / System theme; home banner decodes at the view size",
+        "One universal APK for every Android device (7.0+), same signing key as v9.0"
+      ]
+    },
+    {
+      "id": "dl_900",
+      "version": "9.0",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v9.0/ProfessorVPN-v9.0-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v9.0-universal.apk",
+      "size": "58 MB",
+      "sha256": "b5227e372b4d568c8d2c0d8fdeab63af6a8767d24c7e1d74f894e46773ad0b02",
+      "notes": "v9.0 — STOP truly stops everything, the disconnect button always obeys, and every working config is visible the instant it proves itself",
+      "date": "2026-08-29T17:00:00Z",
+      "changelog": [
+        "STOP now really stops: the background supervisor, the 15-minute WorkManager wake-up, feed fetches and leftover ping jobs are all cancelled the moment you press STOP — nothing keeps running in the background",
+        "No more rows stuck at Pinging… after STOP: the list clears instantly and all green configs sort to the top so you can see exactly which ones pinged",
+        "A permanent working-configs counter sits above the progress bar — it never disappears while the list has content, on both auto-search and manual ping-all",
+        "A config that proves a ping floats to the top immediately, mid-sweep, and stays there through every reload",
+        "The disconnect button always obeys: the auto-failover can no longer override your stop and reconnect to another server, a double-tap can no longer turn into an accidental connect, and a lost disconnect is automatically re-sent",
+        "Faster, honest sweeps: the same server listed under different names is no longer pinged 3-4 times, and dead configs no longer burn 24 seconds each (now 15s) — the progress line moves visibly faster",
+        "Fixed the connect/disconnect cycle leak: an orphaned core that held the VPN ports after rapid cycling (the cause of stops connecting after repeated use) is now cleaned up",
+        "One universal APK for every Android device (7.0+), same signing key — installs directly over v8.9"
+      ]
+    },
+    {
+      "id": "dl_890",
+      "version": "8.9",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v8.9/ProfessorVPN-v8.9-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v8.9-universal.apk",
+      "size": "58 MB",
+      "sha256": "02ca1b67867b2a9687ed47455430e92983569a4b1ccae722c9de136d01b886ab",
+      "notes": "v8.9 — never degrades, never lies, never drops: week-one slowdown fixed at the root, every ping is fresh and real, verified connections heal themselves",
+      "date": "2026-08-29T13:00:00Z",
+      "changelog": [
+        "The week-one slowdown is fixed: diagnostics ledgers, the discovery corpus, orphaned measurement rows and the probe-cap pressure latch are all bounded and released now — the app works the same in week six as in the first hour",
+        "Every manual ping is a FRESH real measurement: no more cached values, no more sweep starting mid-list, pings survive closing and reopening the app",
+        "The list keeps its order while pinging — rows test in place, then sort once at the end (no more jumping)",
+        "A config that pings green in Free is saved to My Configs immediately — no need to leave the tab",
+        "Home now always shows the config you picked in Free/My Configs the moment you return",
+        "A verified connection heals itself: if the server dies completely, the app switches to the best measured alternative and reconnects through the full proof gate",
+        "WiFi roaming and cell handover no longer stall the tunnel (same-type network changes revive it too)",
+        "Healthier links now automatically use the streaming-tuned profile (big buffers, long idle) — feeds and video start faster",
+        "DNS inside the tunnel has a fallback resolver — one flaky resolver no longer stalls page loads",
+        "Port catalogue expanded to 24 ports; the Ports and Fragmentation settings now genuinely affect the engine",
+        "Home banner shows the whole image at a proper height; light theme is fully legible (no more invisible button text)",
+        "One universal APK for every Android device (7.0+)"
+      ]
+    },
+    {
+      "id": "dl_880",
+      "version": "8.8",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v8.8/ProfessorVPN-v8.8-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v8.8-universal.apk",
+      "size": "58 MB",
+      "sha256": "e67a006b48636e2d1cff5c80901f238d9c16f36225f62a0433661d14595e860a",
+      "notes": "v8.8 — servers are always numbered (never real names, even on copy), WiFi/fixed-line fixed, faster discovery, no infrastructure identity in the app",
+      "date": "2026-08-28T12:00:00Z",
+      "changelog": [
+        "Server names are never shown or copied — every config is numbered (Server 1, 2, …) the moment it enters the app, from one counter that never resets",
+        "Existing lists upgrade automatically: a one-time background migration renames everything already stored",
+        "WiFi / fixed-line internet fixed: no more TCP Fast Open on WiFi auto modes (fixed-line equipment silently dropped it and every handshake died)",
+        "Every WiFi network now gets its own measured profile instead of replaying another network's settings for 12 hours",
+        "The strategy the engine learns per network now genuinely shapes probing and connecting (it was a dead setting before)",
+        "Faster discovery: the adaptive probe controller now actually adapts, probes no longer time out while still waiting in queue, and failed configs cool down 30 minutes instead of being retried every cycle",
+        "The app contains no readable reference to its own distribution infrastructure",
+        "Home banner art now fills the banner exactly and renders at full sharpness",
+        "New ANR watchdog and safe-mode boot on top of the existing crash guards",
+        "One universal APK for every Android device (7.0+)"
+      ]
+    },
+    {
+      "id": "dl_870",
+      "version": "8.7",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v8.7/ProfessorVPN-v8.7-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v8.7-universal.apk",
+      "size": "58 MB",
+      "sha256": "f68b045e0c5d29a57236a126fc4d389088e5e0593afb83d07e03d11c673132f3",
+      "notes": "v8.7 — measurement truth: one real probe engine, database-backed lists at any size, per-network strategy, crash-proof upgrade",
+      "date": "2026-08-27T20:00:00Z",
+      "changelog": [
+        "My Configs and Free lists now load through the database with paging — instant at any list size",
+        "One measurement engine for lists, auto-test and the connect button: a shown ping is a real, reproducible tunnel measurement",
+        "A single failed re-test no longer erases a working config (3 failures in 10 minutes before one is declared dead)",
+        "Upgrading with a huge config list no longer crashes — the import is chunked, resumable and backed up",
+        "The engine fingerprints your network (measured, never operator names) and learns which method works on it",
+        "Overnight auto-test survives process death (WorkManager supervisor) and advances cleanly through consumed sources",
+        "Network Settings rebuilt: 11 categorized screens incl. full DNS lab, diagnostics, strategy profiles, export/import",
+        "Per-ABI APK splits on the release page for smaller downloads"
+      ]
+    },
+    {
+      "id": "dl_860",
+      "version": "8.6",
+      "url": "https://github.com/aptixzero/my_prFF_vP_N/releases/download/v8.6/ProfessorVPN-v8.6-universal.apk",
+      "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v8.6-universal.apk",
+      "size": "58 MB",
+      "sha256": "f8da60f3779b93d6443440220995c3e5ba2092952a2adf0b5007823780531b0b",
+      "notes": "v8.6 — disconnect actually stops the tunnel, ping requires proven payload, and the home connect button stays on screen",
+      "date": "2026-08-23T06:21:00Z",
+      "changelog": [
+        "Disconnect now tears the VPN session down and cancels the notification",
+        "A sticky restart after stop can no longer bring the tunnel back by itself",
+        "Connected is only shown after a live device-path check, not a core-only delay",
+        "A ping is not shown if the throughput probe failed",
+        "The home log no longer grows under the connect button",
+        "Exit-IP summaries are printed once per IP/country, not on every resume"
+      ]
+    }
+  ],
+  "registryUrl": "https://prf-vpn-panel.vercel.app"
+}
