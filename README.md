@@ -12,7 +12,7 @@ signing material live in the private build repository.
 `ProfessorVPN-v12.5-universal.apk`
 
 ```text
-SHA-256  64130a02b0f2ef7182468b30fc576033c73170576a2952a9753dce7c5c754be1
+SHA-256  80346891bf3d91946d2e7e268f8bdb18917e03b75984319446460110192b2b27
 ```
 
 Same signing certificate as v6.7–v12.4

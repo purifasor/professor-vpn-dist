@@ -1,6 +1,6 @@
 {
   "version": 69,
-  "updated_at": "2026-10-06T12:52:23Z",
+  "updated_at": "2026-10-06T13:17:28Z",
   "app": {
     "name": "Professor VPN",
     "latest_version": "12.5",
@@ -19,7 +19,7 @@
       "url": "https://github.com/purifasor/professor-vpn-dist/releases/download/v12.5/ProfessorVPN-v12.5-universal.apk",
       "mirror_url": "https://github.com/aptixzero/my_prFF_vP_N/releases/latest/download/ProfessorVPN-v12.5-universal.apk",
       "size": "58 MB",
-      "sha256": "64130a02b0f2ef7182468b30fc576033c73170576a2952a9753dce7c5c754be1",
+      "sha256": "80346891bf3d91946d2e7e268f8bdb18917e03b75984319446460110192b2b27",
       "notes": "v12.5 — the auto-tuned engine: network settings measured and set automatically per link, real pings only (proxied request through the core), live pin/sink split during the sweep, 120-row batches that rotate until you stop, STOP always reachable in-app and in the notification.",
       "changelog": [
         "Network settings are automatic: every launch scans the link (Wi-Fi / carrier / quality / interference) and tunes the tunnel.",
